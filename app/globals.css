@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@keyframes orb-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}
+
+.orb-ring {
+  animation: orb-ring 1.6s ease-out infinite;
+}
+
+.orb-ring-delayed {
+  animation: orb-ring 1.6s ease-out 0.8s infinite;
+}
