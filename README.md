@@ -2,13 +2,13 @@
 
 A production-ready AI voice agent in Next.js. Click a button, talk to an AI agent in your browser over WebRTC. Speech-to-text, the language model, and text-to-speech all run on [Speko](https://speko.ai)'s platform - this app needs exactly one secret: `SPEKO_API_KEY`.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSpekoAI%2Fvoice-agent-starter&env=SPEKO_API_KEY&envDescription=Speko%20API%20key%20(sk_live_...)%20-%20create%20one%20at%20platform.speko.dev%2Fapi-keys&envLink=https%3A%2F%2Fplatform.speko.dev%2Fapi-keys&project-name=speko-voice-agent&repository-name=speko-voice-agent)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSpekoAI%2Fvoice-agent-starter&env=SPEKO_API_KEY&envDescription=Speko%20API%20key%20(sk_live_...)%20-%20create%20one%20at%20platform.speko.ai%2Fagents%2Fkeys&envLink=https%3A%2F%2Fplatform.speko.ai%2Fagents%2Fkeys&project-name=speko-voice-agent&repository-name=speko-voice-agent) [![Deploy on exe.dev](https://raw.githubusercontent.com/boldsoftware/exe.dev/main/assets/buttons/deploy-on-exe-dev.png)](https://exe.dev/new?repo=https://github.com/SpekoAI/voice-agent-starter)
 
 ![Voice agent starter - call screen with live status and transcript](public/screenshot.png)
 
 ## Quickstart
 
-1. **Get an API key** - sign up at [platform.speko.dev](https://platform.speko.dev) and create a key under [API keys](https://platform.speko.dev/api-keys) (starts with `sk_live_`).
+1. **Get an API key** - sign up at [platform.speko.ai](https://platform.speko.ai) and create a key under [API keys](https://platform.speko.ai/agents/keys) (starts with `sk_live_`).
 2. **Set the env var** - `cp .env.example .env.local` and paste your key.
 3. **Run it** - `pnpm install && pnpm dev`, open [http://localhost:3000](http://localhost:3000), click **Start call**.
 
@@ -45,8 +45,8 @@ There is no model code, no audio plumbing, and no second LLM provider in this re
 
 | Variable | Required | Description |
 | --- | --- | --- |
-| `SPEKO_API_KEY` | Yes | Speko API key from [platform.speko.dev/api-keys](https://platform.speko.dev/api-keys). Server-side only. |
-| `SPEKO_AGENT_ID` | No | Use a saved agent from [platform.speko.dev/agents](https://platform.speko.dev/agents) (its prompt, voice, and routing) instead of the inline defaults. |
+| `SPEKO_API_KEY` | Yes | Speko API key from [platform.speko.ai/agents/keys](https://platform.speko.ai/agents/keys). Server-side only. |
+| `SPEKO_AGENT_ID` | No | Use a saved agent from [platform.speko.ai/agents](https://platform.speko.ai/agents) (its prompt, voice, and routing) instead of the inline defaults. |
 | `SPEKO_API_BASE` | No | API base URL. Defaults to `https://api.speko.dev`. |
 
 ## Customize the agent
@@ -54,7 +54,7 @@ There is no model code, no audio plumbing, and no second LLM provider in this re
 Two ways, pick one:
 
 - **In code**: edit `SYSTEM_PROMPT` (and optionally `intent`, `voice`, `firstMessage`) in `app/api/session/route.ts`. See the [sessions API reference](https://docs.speko.dev) for every knob - voice selection, provider constraints, turn handling, background audio, and more.
-- **In the dashboard**: create an agent at [platform.speko.dev/agents](https://platform.speko.dev/agents), then set `SPEKO_AGENT_ID`. Non-engineers can iterate on the prompt and voice without touching this repo.
+- **In the dashboard**: create an agent at [platform.speko.ai/agents](https://platform.speko.ai/agents), then set `SPEKO_AGENT_ID`. Non-engineers can iterate on the prompt and voice without touching this repo.
 
 ## Production notes
 
