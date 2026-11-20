@@ -2,7 +2,7 @@
 
 This is a Next.js (App Router, TypeScript) voice-agent starter. The browser talks to an AI voice
 agent over WebRTC; speech-to-text, the language model, and text-to-speech all run on
-[Speko](https://speko.ai). There is no model code or audio plumbing in this repo.
+[Speko](https://speko.com). There is no model code or audio plumbing in this repo.
 
 ## Run it
 

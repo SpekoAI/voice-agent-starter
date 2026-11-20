@@ -25,7 +25,7 @@ export default function HomePage() {
           Click start, allow the microphone, and speak. Speech recognition, the
           language model, and the voice all run on{' '}
           <a
-            href="https://speko.ai"
+            href="https://speko.com"
             target="_blank"
             rel="noreferrer"
             className="text-sky-400 hover:underline"
