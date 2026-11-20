@@ -1,6 +1,6 @@
 # Speko Voice Agent Starter
 
-A production-ready AI voice agent in Next.js. Click a button, talk to an AI agent in your browser over WebRTC. Speech-to-text, the language model, and text-to-speech all run on [Speko](https://speko.ai)'s platform - this app needs exactly one secret: `SPEKO_API_KEY`.
+A production-ready AI voice agent in Next.js. Click a button, talk to an AI agent in your browser over WebRTC. Speech-to-text, the language model, and text-to-speech all run on [Speko](https://speko.com)'s platform - this app needs exactly one secret: `SPEKO_API_KEY`.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSpekoAI%2Fvoice-agent-starter&env=SPEKO_API_KEY&envDescription=Speko%20API%20key%20(sk_live_...)%20-%20create%20one%20at%20platform.speko.ai%2Fagents%2Fkeys&envLink=https%3A%2F%2Fplatform.speko.ai%2Fagents%2Fkeys&project-name=speko-voice-agent&repository-name=speko-voice-agent) [![Deploy on exe.dev](https://raw.githubusercontent.com/boldsoftware/exe.dev/main/assets/buttons/deploy-on-exe-dev.png)](https://exe.dev/new?repo=https://github.com/SpekoAI/voice-agent-starter)
 
